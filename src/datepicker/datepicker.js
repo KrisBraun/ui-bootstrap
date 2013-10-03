@@ -414,7 +414,7 @@ function ($compile, $parse, $document, $position, dateFilter, datepickerPopupCon
       }
 
       function updatePosition() {
-        scope.position = $position.position(element);
+        scope.position = $position.position(element, appendToBody);
         scope.position.top = scope.position.top + element.prop('offsetHeight');
       }
 
